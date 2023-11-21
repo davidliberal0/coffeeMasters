@@ -2,7 +2,6 @@
 //  MenuManager.swift
 //  CoffeeMasters
 //
-//  Created by Esther Liberal on 11/21/23.
 //
 
 import Foundation
