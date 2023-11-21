@@ -11,6 +11,8 @@
 		1C1D20B02B0C1F9A0070A3A0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C1D20AF2B0C1F9A0070A3A0 /* ContentView.swift */; };
 		1C1D20B22B0C1F9C0070A3A0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1C1D20B12B0C1F9C0070A3A0 /* Assets.xcassets */; };
 		1C1D20B52B0C1F9C0070A3A0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1C1D20B42B0C1F9C0070A3A0 /* Preview Assets.xcassets */; };
+		1C1D20BC2B0C3CDC0070A3A0 /* Offer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C1D20BB2B0C3CDC0070A3A0 /* Offer.swift */; };
+		1C1D20BE2B0C497E0070A3A0 /* OffersPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C1D20BD2B0C497E0070A3A0 /* OffersPage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +21,8 @@
 		1C1D20AF2B0C1F9A0070A3A0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		1C1D20B12B0C1F9C0070A3A0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1C1D20B42B0C1F9C0070A3A0 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		1C1D20BB2B0C3CDC0070A3A0 /* Offer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Offer.swift; sourceTree = "<group>"; };
+		1C1D20BD2B0C497E0070A3A0 /* OffersPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OffersPage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +57,8 @@
 			children = (
 				1C1D20AD2B0C1F9A0070A3A0 /* CoffeeMastersApp.swift */,
 				1C1D20AF2B0C1F9A0070A3A0 /* ContentView.swift */,
+				1C1D20BB2B0C3CDC0070A3A0 /* Offer.swift */,
+				1C1D20BD2B0C497E0070A3A0 /* OffersPage.swift */,
 				1C1D20B12B0C1F9C0070A3A0 /* Assets.xcassets */,
 				1C1D20B32B0C1F9C0070A3A0 /* Preview Content */,
 			);
@@ -137,6 +143,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1C1D20BC2B0C3CDC0070A3A0 /* Offer.swift in Sources */,
+				1C1D20BE2B0C497E0070A3A0 /* OffersPage.swift in Sources */,
 				1C1D20B02B0C1F9A0070A3A0 /* ContentView.swift in Sources */,
 				1C1D20AE2B0C1F9A0070A3A0 /* CoffeeMastersApp.swift in Sources */,
 			);
