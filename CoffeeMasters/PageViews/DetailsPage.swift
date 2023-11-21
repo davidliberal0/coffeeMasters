@@ -14,16 +14,23 @@ struct DetailsPage: View {
     // variable to store the product
     var product: Product
     
+    @EnvironmentObject var cartManager: CartManager
+    
     var body: some View {
         ScrollView {
             AsyncImage(url: product.imageURL)
                 .cornerRadius(5)
                 .frame(maxWidth: .infinity, idealHeight: 150, maxHeight: 150)
                 .padding(.top, 32)
-            Text("Product")
+            Text(product.name)
                 .frame(maxWidth: .infinity)
                 .multilineTextAlignment(.leading)
                 .padding(24)
+            Text(product.description)
+                .frame(maxWidth: .infinity)
+                .multilineTextAlignment(.leading)
+                .padding(24)
+                .foregroundColor(Color("Primary"))
             HStack {
                 Text("$ \(product.price, specifier: "%.2f" ) each")
                 // implement stepper to change quatity
@@ -37,7 +44,7 @@ struct DetailsPage: View {
                 .padding(12)
             
             Button("Add \(Double(quantity)*product.price, specifier: "%.2f") to Cart") {
-                //TODO
+                cartManager.add(product: product, quantity: quantity)
             }
                 .padding()
                 .frame(width: 250.0)
@@ -51,5 +58,6 @@ struct DetailsPage: View {
 }
 
 #Preview {
-    DetailsPage(product: Product(id: 1, name: "Dummy", description: "", price: 1.25, image: ""))
+    DetailsPage(product: Product(id: 1, name: "Dummy", description: "This is a description", price: 1.25, image: ""))
+        .environmentObject(CartManager())
 }
