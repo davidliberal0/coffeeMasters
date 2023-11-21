@@ -41,16 +41,16 @@ struct OrdersPage: View {
                          .padding(.bottom)
                     }.listRowBackground(Color("Background"))
                     
-//                    Section() {
-//                        HStack {
-//                            Spacer()
-//                            Text("Total")
-//                            Spacer()
-//                            Text("$ \(cartManager.total(), specifier: "%.2f")")
-//                                .bold()
-//                            Spacer()
-//                        }
-//                    }.listRowBackground(Color.clear)
+                    Section() {
+                        HStack {
+                            Spacer()
+                            Text("Total")
+                            Spacer()
+                            Text("$ \(cartManager.total(), specifier: "%.2f")")
+                                .bold()
+                            Spacer()
+                        }
+                    }.listRowBackground(Color.clear)
                     
                     Section {
                         HStack {
